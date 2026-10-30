@@ -1,0 +1,134 @@
+/* ==========================================
+   1. СБРОС И БАЗОВЫЕ НАСТРОЙКИ
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0e1217; /* Глубокий темный фон (поля вокруг) */
+    color: #b3b9c1;            /* Комфортный серый цвет для обычного текста */
+    font-family: Arial, sans-serif;
+    padding: 20px;             /* Отступы от краев экрана браузера */
+}
+
+/* ==========================================
+   2. ГЛАВНЫЕ КОНТЕЙНЕРЫ (СТРУКТУРА)
+   ========================================== */
+#main_containermaybeidk {
+    max-width: 1200px;         /* Ограничение сайта по ширине */
+    margin: 0 auto;            /* Центрирование сайта на экране */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;                 /* Отступ между меню и основным контентом */
+}
+
+/* Шапка (Верхняя панель) */
+#verx {
+    background-color: #1c232d; /* Графитовая плашка */
+    border: 1px solid #2d3748; /* Тонкая рамка вместо тени */
+    border-radius: 12px;        /* Красивое скругление углов */
+    min-height: 70px;          
+    padding: 15px 25px;        
+    
+    display: flex;
+    align-items: center;       /* Выравнивание элементов внутри по вертикали */
+}
+
+/* Блок основного контента */
+#main {
+    background-color: #1c232d; 
+    border: 1px solid #2d3748; 
+    border-radius: 12px;        
+    min-height: 500px;         
+    padding: 30px;             
+}
+
+/* Стили для заголовков внутри контента */
+#main h1 {
+    color: #ffffff;            /* Яркий белый для контраста */
+    margin-bottom: 15px;
+}
+
+/* ==========================================
+   3. ЛОГОТИП И СТРУКТУРА КНОПКИ ПРЕДМЕТОВ
+   ========================================== */
+
+/* Стили для логотипа Zentveti */
+#maybelogoidk {
+    color: #38bdf8;            /* Сочный неоново-голубой цвет */
+    font-size: 24px;           
+    font-weight: 800;          /* Жирный шрифт */
+    text-decoration: none;     /* Убираем подчеркивание */
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+#maybelogoidk:hover {
+    color: #7dd3fc;            /* Чуть светлее при наведении */
+    transform: scale(1.03);    /* Легкое увеличение */
+}
+
+/* Контейнер-обертка для кнопки и списка предметов */
+#items_maybe {
+    position: relative;        /* Нужен для позиционирования выпадающего списка */
+    margin-left: 40px;         /* Отступ (расстояние) блока с кнопкой от логотипа Zentveti */
+}
+
+/* ==========================================
+   4. ВСПЛЫВАЮЩЕЕ МЕНЮ ПРЕДМЕТОВ
+   ========================================== */
+
+/* Кнопка "Предметы ▾" */
+#butforitemsidk {
+    background-color: #2d3748; /* Темно-серый фон кнопки */
+    color: #f5f6f7;
+    border: 1px solid #4a5568;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+#butforitemsidk:hover {
+    background-color: #3a4a63; /* Подсветка при наведении */
+    border-color: #38bdf8;     /* Неоновая рамка */
+}
+
+/* Само выпадающее окошко с предметами */
+#dropitems_maybe {
+    position: absolute;
+    top: calc(100% + 12px);    /* Расстояние (отступ) от кнопки вниз до выпадающего меню */
+    left: 0;                   /* Выравнивание по левому краю кнопки */
+    background-color: #1c232d; /* Графитовый фон в цвет шапки */
+    border: 1px solid #4a5568; /* Граница окошка */
+    border-radius: 10px;
+    width: 280px;              /* Ширина блока ссылок, чтобы помещались длинные названия */
+    padding: 8px 0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* Глубокая темная тень */
+    z-index: 100;              /* Чтобы меню перекрывало основной контент #main */
+}
+
+/* Ссылки (предметы) внутри выпадающего меню */
+#dropitems_maybe a {
+    display: block;            /* Каждая ссылка с новой строки на всю ширину */
+    color: #b3b9c1;
+    padding: 12px 16px;        /* Внутренние отступы (расстояние) между самими ссылками */
+    font-size: 14px;
+    text-decoration: none;     /* Отменяем стандартное подчеркивание ссылок */
+    transition: background-color 0.15s, color 0.15s;
+}
+
+#dropitems_maybe a:hover {
+    background-color: #2d3748; /* Фон пункта при наведении */
+    color: #ffffff;            /* Текст становится ярко-белым */
+}
+
+#profileimageenter{
+    
+
+}
