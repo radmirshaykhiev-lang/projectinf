@@ -1,0 +1,13 @@
+body{
+    background-color: #0e1217;
+    color: #b3b9c1;            /* Комфортный серый цвет для обычного текста */
+    font-family: Arial, sans-serif;
+    padding: 20px;     
+}
+#menuenter{
+     max-width: 1200px;         /* Ограничение сайта по ширине */
+    margin: 0 auto;            /* Центрирование сайта на экране */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

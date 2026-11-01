@@ -5,3 +5,6 @@ function openmenuitems(){
 Openmenuitems = !openmenuitems;
 menuitems.hidden = !menuitems.hidden;
 }
+function openprofileenter(){
+    window.open("enterinpr.html")
+}
