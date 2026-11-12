@@ -8,7 +8,41 @@
 </head>
 <body>
     <div id="menuenter">
-        <h1>Не имеете аккаунта? Создайте</h1>
+        <h2>Вход в профиль</h2>
+        
+        <!-- Форма входа -->
+        <form action="/login" method="POST" id="loginform">
+            <div class="form-group">
+                <label for="username">Имя пользователя:</label>
+                <input 
+                    type="text" 
+                    id="username" 
+                    name="username" 
+                    autocomplete="username" 
+                    required 
+                    placeholder="Введите имя"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    autocomplete="current-password" 
+                    required 
+                    placeholder="Введите пароль"
+                >
+            </div>
+
+            <button type="submit" id="buttonforlogin">Войти</button>
+        </form>
+
+        <button id="buttonforregister" onclick="openCrAcc()"><h3>Не имеете аккаунта? Создайте</h3></button>
     </div>
+    <script src="entrinpr.js">
+
+    </script>
 </body>
 </html>

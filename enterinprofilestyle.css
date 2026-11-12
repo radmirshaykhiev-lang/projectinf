@@ -1,13 +1,100 @@
-body{
+body {
     background-color: #0e1217;
     color: #b3b9c1;            /* Комфортный серый цвет для обычного текста */
     font-family: Arial, sans-serif;
     padding: 20px;     
 }
-#menuenter{
-     max-width: 1200px;         /* Ограничение сайта по ширине */
-    margin: 0 auto;            /* Центрирование сайта на экране */
+
+#menuenter {
+    max-width: 400px;          /* Уменьшил ширину для формы входа, чтобы она не растягивалась во весь экран */
+    margin: 50px auto;         /* Центрирование на экране и отступ сверху */
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: #171e26; /* Чуть более светлый темный фон для карточки меню */
+    padding: 30px;
+    border-radius: 12px;       /* Скругление краев карточки */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Мягкая тень для объема */
+}
+
+/* Заголовок формы */
+#menuenter h2 {
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+/* Тег формы и группировка полей */
+#loginform {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Стилизация полей ввода */
+.form-group input {
+    background-color: #1a232e; /* Темный фон для инпутов */
+    border: 1px solid #4a5568;  /* Граница в цвет вашей кнопки */
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+/* Эффект при клике на поле ввода */
+.form-group input:focus {
+    border-color: #718096;     /* Подсветка рамки при фокусе */
+}
+
+/* Кнопка "Войти" */
+#buttonforlogin {
+    background-color: #3182ce; /* Акцентный синий цвет для главной кнопки */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+#buttonforlogin:hover {
+    background-color: #2b6cb0; /* Эффект при наведении */
+}
+
+/* Кнопка "Создать аккаунт" (Второстепенная) */
+#buttonforregister {
+    background-color: transparent; /* Сделал прозрачной, чтобы не спорила с кнопкой Войти */
+    border: 1px solid #4a5568;
+    border-radius: 8px;
+    color: #b3b9c1;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#buttonforregister h3 {
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#buttonforregister:hover {
+    background-color: #4a5568;  /* Окрашивается в ваш серый при наведении */
+    color: #ffffff;
 }

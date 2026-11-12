@@ -130,6 +130,8 @@ body {
 }
 
 #profileimageenter{
-    
-
+    cursor: pointer;
+    margin-left: auto;      /* Отталкивает иконку в самый правый край шапки */
+    width: 40px;            /* Задаем аккуратный размер иконки */
+    height: 40px;
 }
